@@ -4,13 +4,29 @@
     --sub-color: #F5D432;
 }
 
+.bg-main {
+    background-color: var(--main-color);
+}
+
 .main_text {
     color: var(--main-color);
+}
+
+.sub_text {
+    color: var(--sub-color);
+}
+
+.fs-32 {
+    font-size: 32px;
 }
 
 .fs-17 {
     font-size: 17px;
     font-weight: 600;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 #header {
@@ -84,12 +100,14 @@ a.advice {
 }
 
 .btn_link {
+    text-transform: uppercase;
     width: fit-content;
     background-color: #C0242E; /* For browsers that do not support gradients */
     background-image: linear-gradient(red, #C0242E);
     margin-top: 40px;
-    padding: 6px 68px;
     text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: #FDF5F6;
     display: block;
     border-radius: 34px;
@@ -133,6 +151,7 @@ a.advice {
     font-size: 40px;
     color: #CF2128;
     text-align: center;
+    font-weight: bold;
 }
 
 ul {
@@ -169,4 +188,78 @@ li::before {
 .teacher-video {
     width: 372px;
     height: 278px;
+}
+
+.register-section {
+    overflow: hidden;
+    height: 950px;
+    max-height: 1100px;
+    position: relative;
+}
+
+.your_future {
+    margin-top: -1rem;
+}
+
+.register-section .bg-register {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.form-register {
+    text-align: center;
+    /*width: 499px;*/
+    border: var(--main-color) 1px solid;
+    padding: 31px 24px 57px;
+    background-color: #FFFFFF;
+    border-radius: 28px;
+}
+
+.form-title {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.calender {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-section input {
+    height: 48px;
+    border: #DDDDDD 1px solid;
+    border-radius: 30px;
+    padding-left: 23px;
+    margin-bottom: 13px;
+}
+
+.teacher-info {
+    top: 45px;
+}
+
+.teacher-description {
+    width: 650px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.teacher-description .content {
+    margin-left: 124px;
+}
+
+.avatar-teacher {
+    height: 162px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.teacher-content {
+
 }
