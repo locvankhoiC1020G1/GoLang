@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        .smallnav {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .smallnav img {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <div class="d-flex" id="header">
     <div class="container d-flex align-items-center justify-content-between">
         <div class="">
             <a class="logo_main" href="#">
-                IELTS LangGo
+                <img src="assets/img/logo_langgo.png" alt="">
             </a>
         </div>
         <div class="d-flex nav justify-content-between align-items-center">
@@ -30,7 +45,7 @@
         </div>
     </div>
 </div>
-<div class="banner">
+<div class="banner overflow-hidden">
     <div class="d-flex position-relative justify-content-center">
         <img src="assets/img/banner.png" class="" alt="">
         <div class="content_banner position-absolute d-flex left-0 top-0 container">
@@ -133,8 +148,7 @@
         <div class="pt-4">
             <div class="position-relative d-flex align-items-center">
                 <img src="assets/img/background_title.png" alt="">
-                <div class="text-red position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
-
+                <div class="text-red main_text position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
             </div>
             <ul>
                 <li>Sinh viên cần chứng chỉ tiếng Anh để phục vụ việc tốt nghiệp,
@@ -148,7 +162,7 @@
         <div class="pt-4">
             <div class="position-relative d-flex align-items-center">
                 <img src="assets/img/background_title.png" alt="">
-                <div class="text-red position-absolute">CAM KẾT CỦA CHÚNG TÔI</div>
+                <div class="text-red main_text position-absolute">CAM KẾT CỦA CHÚNG TÔI</div>
 
             </div>
             <ul>
@@ -163,7 +177,7 @@
         <div class="pt-4">
             <div class="position-relative d-flex align-items-center">
                 <img src="assets/img/background_title.png" alt="">
-                <div class="text-red position-absolute">CHI TIẾT KHÓA HỌC
+                <div class="text-red main_text position-absolute">CHI TIẾT KHÓA HỌC
                 </div>
 
             </div>
@@ -184,69 +198,289 @@
 <!--route course-->
 <div class="bg-white">
     <div class="d-flex justify-content-center section">
-        <div class="container">
+        <div class="">
             <h2 class="title">LỘ TRÌNH HỌC IELTS TỪ 0 - 7.0+
             </h2>
             <img class="float-end mr-5" src="assets/img/icon/icon_star.png" alt="">
             <div class="pt-4">
                 <div class="d-flex justify-content-between">
-                    <div class="btn_tab">Bổ trợ</div>
-                    <div class="btn_tab">Bổ trợ</div>
-                    <div class="btn_tab">Bổ trợ</div>
-                    <div class="btn_tab">Bổ trợ</div>
-                    <div class="btn_tab">Bổ trợ</div>
-                    <div class="btn_tab">Bổ trợ</div>
+                    <button class="btn_tab">Bổ trợ</button>
+                    <button class="btn_tab">Bổ trợ</button>
+                    <button class="btn_tab">Bổ trợ</button>
+                    <button class="btn_tab">Bổ trợ</button>
+                    <button class="btn_tab">Bổ trợ</button>
+                    <button class="btn_tab">Bổ trợ</button>
                 </div>
-                <div class="position-relative d-flex align-items-center">
-                    <img src="assets/img/background_title.png" alt="">
-                    <div class="text-red position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                <div class="container ">
+                    <div class="row d-flex flex-wrap g-5">
+                        <div class="col-6">
+                            <div class="course_item">
+                                <div class="position-relative d-flex align-items-center">
+                                    <img src="assets/img/bg_heading_course.png" alt="">
+                                    <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png"
+                                         alt="">
+                                    <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                                </div>
+                                <ul class="pt-4">
+                                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                    </li>
+                                    <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                        (không
+                                        qua trợ
+                                        giảng).
+                                    </li>
+                                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                        ELC).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="course_item">
+                                <div class="position-relative d-flex align-items-center">
+                                    <img src="assets/img/bg_heading_course.png" alt="">
+                                    <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png"
+                                         alt="">
+                                    <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                                </div>
+                                <ul class="pt-4">
+                                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                    </li>
+                                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                        ELC).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="course_item">
+                                <div class="position-relative d-flex align-items-center">
+                                    <img src="assets/img/bg_heading_course.png" alt="">
+                                    <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png"
+                                         alt="">
+                                    <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                                </div>
+                                <ul class="pt-4">
+                                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                    </li>
+                                    <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                        (không
+                                        qua trợ
+                                        giảng).
+                                    </li>
+                                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                        ELC).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="course_item">
+                                <div class="position-relative d-flex align-items-center">
+                                    <img src="assets/img/bg_heading_course.png" alt="">
+                                    <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png"
+                                         alt="">
+                                    <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                                </div>
+                                <ul class="pt-4">
+                                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                    </li>
+                                    <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                        (không
+                                        qua trợ
+                                        giảng).
+                                    </li>
+                                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                        ELC).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="course_item">
+                                <div class="position-relative d-flex align-items-center">
+                                    <img src="assets/img/bg_heading_course.png" alt="">
+                                    <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png"
+                                         alt="">
+                                    <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                                </div>
+                                <ul class="pt-4">
+                                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                    </li>
+                                    <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                        (không
+                                        qua trợ
+                                        giảng).
+                                    </li>
+                                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                        ELC).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                </div>
-                <ul>
-                    <li>Sinh viên cần chứng chỉ tiếng Anh để phục vụ việc tốt nghiệp,
-                        miễn học phần tiếng Anh, học chuyên ngành.
-                    </li>
-                    <li>SNgười đi làm cần có IELTS để thăng tiến, nắm lấy các cơ hội nghề nghiệp cạnh tranh.</li>
-                    <li>Học sinh, người cần chứng chỉ IELTS để tìm kiếm cơ hội du học nước ngoài.</li>
-                    <li> Học sinh cấp 2, cấp 3 cần IELTS để được vào thẳng các trường THPT chuyên, Đại học - Cao đẳng.</li>
-                </ul>
-            </div>
-            <div class="pt-4">
-                <div class="position-relative d-flex align-items-center">
-                    <img src="assets/img/background_title.png" alt="">
-                    <div class="text-red position-absolute">CAM KẾT CỦA CHÚNG TÔI</div>
-
-                </div>
-                <ul>
-                    <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
-                    </li>
-                    <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên (không qua trợ
-                        giảng).
-                    </li>
-                    <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP, ELC).</li>
-                </ul>
-            </div>
-            <div class="pt-4">
-                <div class="position-relative d-flex align-items-center">
-                    <img src="assets/img/background_title.png" alt="">
-                    <div class="text-red position-absolute">CHI TIẾT KHÓA HỌC
                     </div>
-
                 </div>
-                <ul>
-                    <li>Giáo trình chuẩn Cambridge kết hợp với giáo trình riêng do
-                        đội ngữ GV LangGo biên soạn phù hợp với người Việt.
-                    </li>
-                    <li> Có 2 hình thức học: Online và Offline (Tự do lựa chọn hình thức phù hợp).</li>
-                    <li>Thời lượng: từ 2-3 tháng/khóa - 3 buổi/tuần (Tổng thời lượng từ 150 - 200h/khóa)</li>
-                    <li> Có kiểm tra đầu vào - đầu ra từng khóa để đảm bảo chất lượng học tập.</li>
-                </ul>
+                <div class="course_content  pt-5 container">
+                    <div class="row g-4">
+                        <div class="course_item col-6">
+                            <div class="position-relative d-flex align-items-center">
+                                <img src="assets/img/bg_heading_course.png" alt="">
+                                <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png" alt="">
+                                <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                            </div>
+                            <ul class="pt-4">
+                                <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                </li>
+                                <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                    (không
+                                    qua trợ
+                                    giảng).
+                                </li>
+                                <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                    ELC).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course_item col-6">
+                            <div class="position-relative d-flex align-items-center">
+                                <img src="assets/img/bg_heading_course.png" alt="">
+                                <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png" alt="">
+                                <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                            </div>
+                            <ul class="pt-4">
+                                <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                </li>
+                                <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                    (không
+                                    qua trợ
+                                    giảng).
+                                </li>
+                                <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                    ELC).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course_item col-6">
+                            <div class="position-relative d-flex align-items-center">
+                                <img src="assets/img/bg_heading_course.png" alt="">
+                                <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png" alt="">
+                                <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                            </div>
+                            <ul class="pt-4">
+                                <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                </li>
+                                <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                    (không
+                                    qua trợ
+                                    giảng).
+                                </li>
+                                <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                    ELC).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course_item col-6">
+                            <div class="position-relative d-flex align-items-center">
+                                <img src="assets/img/bg_heading_course.png" alt="">
+                                <img class="course_icon position-absolute" src="assets/img/icon/user_icon.png" alt="">
+                                <div class="text-red text-white position-absolute">KHÓA HỌC NÀY DÀNH CHO AI?</div>
+                            </div>
+                            <ul class="pt-4">
+                                <li>Cam kết đầu ra bằng hợp đồng ở đầu mỗi khóa học IELTS LangGo.
+                                </li>
+                                <li>Đội ngũ GV có năng lực tiếng Anh 8.0 IELTS, trực tiếp chấm chữa bài cho học viên
+                                    (không
+                                    qua trợ
+                                    giảng).
+                                </li>
+                                <li> 100% GV tại LangGo được đào tạo với các phương pháp giảng dạy hiện đại (NLP,
+                                    ELC).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn_link m-auto mt-5">LÀM BÀI TEST THỬ TRÌNH ĐỘ MIỄN PHÍ
+                </a>
             </div>
-            <a href="" class="btn_link m-auto mt-5">LÀM BÀI TEST THỬ TRÌNH ĐỘ MIỄN PHÍ
-            </a>
+        </div>
+    </div>
+    <!--end route course-->
+</div>
+<!--end route course-->
+
+<!--video-->
+<div class="position-relative d-flex justify-content-center section">
+    <img src="assets/img/Clip%20Group.png" alt="">
+    <div class="position-absolute container pt-5 pb-4">
+        <div class="d-flex">
+            <img src="assets/img/uytin.png" alt="">
+            <h2 class="title">#1 TRUNG TÂM LUYỆN THI IELTS UY TÍN ĐƯỢC HỌC VIÊN VÀ PHỤ HUYNH TIN TƯỞNG
+            </h2>
+        </div>
+        <div class="owl-carousel pt-5">
+            <div class="item">
+                <img class="teacher-video" src="assets/img/image_video.png" alt="">
+                <p class="text-center pt-3 fs-17">
+                    Ngọc Hoa - IELTS 7.5
+                </p>
+            </div>
+            <div class="item">
+                <img class="teacher-video" src="assets/img/image_video.png" alt="">
+                <p class="text-center pt-3 fs-17">
+                    Ngọc Hoa - IELTS 7.5
+                </p>
+            </div>
+            <div class="item">
+                <img class="teacher-video" src="assets/img/image_video.png" alt="">
+                <p class="text-center pt-3 fs-17">
+                    Ngọc Hoa - IELTS 7.5
+                </p>
+            </div>
+            <div class="item">
+                <img class="teacher-video" src="assets/img/image_video.png" alt="">
+                <p class="text-center pt-3 fs-17">
+                    Ngọc Hoa - IELTS 7.5
+                </p>
+            </div>
+            <div class="item">
+                <img class="teacher-video" src="assets/img/image_video.png" alt="">
+                <p class="text-center pt-3 fs-17">
+                    Ngọc Hoa - IELTS 7.5
+                </p>
+            </div>
         </div>
     </div>
 </div>
-<!--end route course-->
+<!--end of video-->
+<!--register section-->
+<div>
+    <div class="position-relative d-flex justify-content-center section">
+        <img src="assets/img/register_section.png" alt="">
+        <div class="position-absolute container pt-5 pb-4">
+            <div class="d-flex">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        // số lượng items trên mỗi lần chạy
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        // Chỉnh thời gian chạy
+        autoplayTimeout: 10000,
+        // autoplayHoverPause:true
+    });
+
+</script>
 </body>
 </html>

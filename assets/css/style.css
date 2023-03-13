@@ -4,18 +4,26 @@
     --sub-color: #F5D432;
 }
 
+.main_text {
+    color: var(--main-color);
+}
+
+.fs-17 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
 #header {
     background-color: var(--main-color);
     position: fixed;
     left: 0;
     right: 0;
     height: 98px;
-    /*z-index: 999;*/
+    z-index: 999;
 }
 
 .text-red {
     margin-left: 86px;
-    color: var(--main-color);
     font-size: 19px;
     font-weight: 700;
 }
@@ -107,7 +115,6 @@ a.advice {
 
 .statistic img {
     width: 100%;
-    z-index: 9999;
 }
 
 .number_statistic {
@@ -129,7 +136,6 @@ a.advice {
 }
 
 ul {
-    width: 922px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -145,4 +151,22 @@ ul li {
 li::before {
     content: "• ";
     color: red; /* or whatever color you prefer */
+}
+
+.course_item {
+    padding: 45px 52px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+.course_icon {
+    width: 21px;
+    height: 24px;
+    left: 11px;
+}
+
+.teacher-video {
+    width: 372px;
+    height: 278px;
 }
